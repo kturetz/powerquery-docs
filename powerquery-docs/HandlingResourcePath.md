@@ -15,7 +15,7 @@ LocalizationGroup: reference
 
 The M engine identifies a data source using a combination of its *Kind* and *Path*. When a data source is encountered during a query evaluation, the M engine will try to find matching credentials. If no credentials are found, the engine returns a special error that results in a credential prompt in Power Query.
 
-The *Kind* value comes from [Data Source Kind] definition.
+The *Kind* value comes from [Data Source Kind](/java/api/com.azure.resourcemanager.loganalytics.models.datasourcekind?view=azure-java-preview definition).
 
 The *Path* value is derived from the *required parameters* of your data source function(s). Optional parameters aren't factored into the data source path identifier. As a result, all data source functions associated with a data source kind must have the same parameters. There's special handling for functions that have a single parameter of type `Uri.Type`. See below for further details.
 
